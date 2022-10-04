@@ -26,6 +26,10 @@ app.get("/api/food", (req, res) => {
   res.json({ message: "API Food" })
 });
 
+app.get("/api/users", (req, res) => {
+  res.json({ message: "API Users" })
+});
+
 app.listen(3000, () => {
   console.log("Server on port 3000");
 });
