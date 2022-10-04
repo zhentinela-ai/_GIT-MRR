@@ -10,7 +10,6 @@ app.get("/registro", (req, res) => {
 });
 
 app.get("/adios", (req, res) => {
-  // res.send("ruta Adios");
   res.json({ message: "No es una despedida, solamente es un adiós" })
 });
 
