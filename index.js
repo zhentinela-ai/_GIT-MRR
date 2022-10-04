@@ -10,15 +10,16 @@ app.get("/registro", (req, res) => {
 });
 
 app.get("/adios", (req, res) => {
-  res.send("ruta Adios");
+  // res.send("ruta Adios");
+  res.json({ message: "No es una despedida, solamente es un adiós" })
 });
 
 app.get("/registro", (req, res) => {
-  res.send("ruta Adios");
+  res.json({ message: "Ruta de información de registro" })
 });
 
 app.post("/login", (req, res) => {
-  res.send("Ruta de login nueva");
+  res.json({ message: "Ruta nueva para el login" });
 });
 
 app.listen(3000, () => {
