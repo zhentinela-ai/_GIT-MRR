@@ -13,12 +13,17 @@ app.get("/adios", (req, res) => {
   res.json({ message: "No es una despedida, solamente es un adiós" })
 });
 
+
 app.get("/registro", (req, res) => {
   res.json({ message: "Ruta de información de registro" })
 });
 
 app.post("/login", (req, res) => {
   res.json({ message: "Ruta nueva para el login" });
+});
+
+app.get("/api/food", (req, res) => {
+  res.json({ message: "API Food" })
 });
 
 app.listen(3000, () => {
